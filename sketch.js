@@ -24,11 +24,9 @@ function draw() {
   var x;
   if (car.velocityX > 0) {
     background(255, 255, 255);
-    text("car.x:" + car.x, 200, 150);
-    text("wall.x:" + wall.x, 200, 180);
-    text("Deformation:" + deformation, 200, 200)
+    
     x = car.collide(wall);
-    text("x = " + x, 200, 165);
+    
     
     if (x) {
 
